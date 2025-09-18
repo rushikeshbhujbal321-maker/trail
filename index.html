@@ -1,0 +1,659 @@
+<!doctype html>
+<html lang="en">
+  <head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>DailyZest – Fresh Knowledge for Mind, Body & Future</title>
+  <meta name="description" content="DailyZest brings you fresh insights across technology, health, nutrition, books, mindset, and future science—designed to fuel your growth every day.">
+  <meta name="keywords" content="daily zest, knowledge, technology, health, nutrition, books, mindset, science, future trends, self improvement">
+  <meta name="author" content="DailyZest" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="DailyZest" />
+  <meta property="og:url" content="https://dailyzest.live/" />
+  <meta property="og:title" content="DailyZest – Fresh Knowledge for Mind, Body & Future" />
+  <meta property="og:description" content="Discover cutting-edge guides, health wisdom, nutrition tips, and science insights to sharpen your everyday life." />
+  <meta property="og:image" content="https://dailyzest.live/og-image.jpg" />
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:site" content="@dailyzest" />
+  <meta property="twitter:url" content="https://dailyzest.live/" />
+  <meta property="twitter:title" content="DailyZest – Fresh Knowledge for Mind, Body & Future" />
+  <meta property="twitter:description" content="Discover cutting-edge guides, health wisdom, nutrition tips, and science insights to sharpen your everyday life." />
+  <meta property="twitter:image" content="https://dailyzest.live/og-image.jpg" />
+
+  <!-- CSS + Icons -->
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/lucide/0.344.0/lucide.min.css" rel="stylesheet">
+</head>
+
+  <body>
+    <div id="root">
+      <!-- ===== Navbar (Stage 1) ===== -->
+<nav class="navbar" id="navbar">
+  <div class="navbar__container">
+    
+    <!-- Left: Logo -->
+    <a href="#" class="navbar__logo">
+      <span class="navbar__icon">🐘</span>
+      <span class="navbar__brand">
+        <span class="navbar__brand--daily">Daily</span>
+        <span class="navbar__brand--zest">Zest</span>
+      </span>
+    </a>
+
+    <!-- Center: Categories -->
+    <ul class="navbar__links">
+      <li><a href="#"><span>Health &</span><br><span>Wellness</span></a></li>
+      <li><a href="#"><span>Diet &</span><br><span>Nutrition</span></a></li>
+      <li><a href="#"><span>Books &</span><br><span>Learning</span></a></li>
+      <li><a href="#"><span>Mindset &</span><br><span>Self-Improvement</span></a></li>
+      <li><a href="#"><span>Science &</span><br><span>Future Trends</span></a></li>
+    </ul>
+
+ <!-- Right: Search + About -->
+<div class="navbar__actions">
+  <button id="search-btn" class="navbar__search" aria-label="Search">
+    <!-- Proper search icon (Lucide style) -->
+    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+      <circle cx="11" cy="11" r="8"/>
+      <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+    </svg>
+  </button>
+
+  <a href="#" class="navbar__about">About</a>
+</div>
+
+</div> <!-- closes .navbar__container -->
+
+<!-- Search Dropdown -->
+<div class="search-dropdown" id="search-dropdown">
+  <div class="search-box">
+    <input type="text" class="search-input" placeholder="Search DailyZest…" />
+    <button class="search-close" id="search-close" aria-label="Close search">
+      <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+        <line x1="18" y1="6" x2="6" y2="18"/>
+        <line x1="6" y1="6" x2="18" y2="18"/>
+      </svg>
+    </button>
+  </div>
+</div>
+
+
+
+
+
+      <!-- Hero Section -->
+      <section class="bg-gradient-to-br from-gray-50 via-white to-gray-100 py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="grid lg:grid-cols-2 gap-12 items-center">
+            <div class="space-y-8">
+              <div class="space-y-6">
+                <h1 class="text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
+                  Empowering<span class="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent"> Minds</span>,<br>
+                  Transforming<span class="bg-gradient-to-r from-green-500 to-blue-500 bg-clip-text text-transparent"> Futures</span>
+                </h1>
+                <p class="text-xl text-gray-600 leading-relaxed">
+                  Discover cutting-edge insights across technology, health, nutrition, and personal growth. Join thousands of forward-thinking individuals shaping tomorrow's world.
+                </p>
+              </div>
+              
+              <div class="flex flex-col sm:flex-row gap-4">
+                <button class="group bg-gradient-to-r from-blue-500 to-purple-600 text-white px-8 py-4 rounded-xl font-semibold text-lg hover:shadow-xl hover:scale-105 transition-all duration-300 flex items-center justify-center space-x-2">
+                  <span>Start Exploring</span>
+                  <i data-lucide="chevron-right" class="w-5 h-5 group-hover:translate-x-1 transition-transform"></i>
+                </button>
+                <button class="group bg-white text-gray-700 border-2 border-gray-200 px-8 py-4 rounded-xl font-semibold text-lg hover:border-purple-300 hover:shadow-lg transition-all duration-300 flex items-center justify-center space-x-2">
+                  <i data-lucide="play" class="w-5 h-5 text-purple-600"></i>
+                  <span>Watch Demo</span>
+                </button>
+              </div>
+              
+              <div class="flex items-center space-x-8 text-sm text-gray-500">
+                <div>
+                  <span class="font-bold text-gray-900 text-lg">10K+</span>
+                  <span class="block">Active Readers</span>
+                </div>
+                <div>
+                  <span class="font-bold text-gray-900 text-lg">500+</span>
+                  <span class="block">Articles</span>
+                </div>
+                <div>
+                  <span class="font-bold text-gray-900 text-lg">6</span>
+                  <span class="block">Categories</span>
+                </div>
+              </div>
+            </div>
+            
+            <div class="relative">
+              <div class="relative h-96 lg:h-[500px] rounded-2xl overflow-hidden shadow-2xl" id="hero-carousel">
+                <!-- Carousel slides will be populated by JavaScript -->
+              </div>
+              <div class="flex justify-center mt-6 space-x-2" id="carousel-dots">
+                <!-- Dots will be populated by JavaScript -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Featured Categories -->
+      <section class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="text-center mb-16">
+            <h2 class="text-4xl lg:text-5xl font-bold text-gray-900 mb-4">Featured Categories</h2>
+            <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+              Dive deep into our most popular topics with expert-curated content and actionable insights
+            </p>
+          </div>
+          
+          <div class="grid md:grid-cols-3 gap-8">
+            <div class="group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 overflow-hidden">
+              <div class="bg-gradient-to-br from-cyan-400 to-blue-500 p-8 text-white relative overflow-hidden">
+                <div class="absolute top-0 right-0 w-32 h-32 bg-white/10 rounded-full -translate-y-16 translate-x-16"></div>
+                <div class="relative z-10">
+                  <div class="mb-4">
+                    <i data-lucide="cpu" class="w-8 h-8"></i>
+                  </div>
+                  <h3 class="text-2xl font-bold mb-2">Technology</h3>
+                  <p class="text-white/90 mb-4">AI, blockchain, and emerging tech trends</p>
+                  <div class="text-sm font-semibold">127 Articles</div>
+                </div>
+              </div>
+              <div class="p-6">
+                <button class="w-full py-3 rounded-xl font-semibold transition-all duration-300 hover:scale-105" 
+                        style="background-color: #00CFFF15; color: #00CFFF; border: 2px solid #00CFFF30;">
+                  Explore Category
+                </button>
+              </div>
+            </div>
+            
+            <div class="group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 overflow-hidden">
+              <div class="bg-gradient-to-br from-green-400 to-emerald-500 p-8 text-white relative overflow-hidden">
+                <div class="absolute top-0 right-0 w-32 h-32 bg-white/10 rounded-full -translate-y-16 translate-x-16"></div>
+                <div class="relative z-10">
+                  <div class="mb-4">
+                    <i data-lucide="heart" class="w-8 h-8"></i>
+                  </div>
+                  <h3 class="text-2xl font-bold mb-2">Health & Wellness</h3>
+                  <p class="text-white/90 mb-4">Mental health, fitness, and lifestyle tips</p>
+                  <div class="text-sm font-semibold">89 Articles</div>
+                </div>
+              </div>
+              <div class="p-6">
+                <button class="w-full py-3 rounded-xl font-semibold transition-all duration-300 hover:scale-105" 
+                        style="background-color: #00D08415; color: #00D084; border: 2px solid #00D08430;">
+                  Explore Category
+                </button>
+              </div>
+            </div>
+            
+            <div class="group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 overflow-hidden">
+              <div class="bg-gradient-to-br from-orange-400 to-red-500 p-8 text-white relative overflow-hidden">
+                <div class="absolute top-0 right-0 w-32 h-32 bg-white/10 rounded-full -translate-y-16 translate-x-16"></div>
+                <div class="relative z-10">
+                  <div class="mb-4">
+                    <i data-lucide="apple" class="w-8 h-8"></i>
+                  </div>
+                  <h3 class="text-2xl font-bold mb-2">Diet & Nutrition</h3>
+                  <p class="text-white/90 mb-4">Evidence-based nutrition and healthy recipes</p>
+                  <div class="text-sm font-semibold">156 Articles</div>
+                </div>
+              </div>
+              <div class="p-6">
+                <button class="w-full py-3 rounded-xl font-semibold transition-all duration-300 hover:scale-105" 
+                        style="background-color: #FF7F5015; color: #FF7F50; border: 2px solid #FF7F5030;">
+                  Explore Category
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Trending Articles -->
+      <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="flex justify-between items-end mb-16">
+            <div>
+              <h2 class="text-4xl lg:text-5xl font-bold text-gray-900 mb-4">Trending Articles</h2>
+              <p class="text-xl text-gray-600">Most popular content across all categories this week</p>
+            </div>
+            <button class="hidden lg:block bg-gradient-to-r from-purple-600 to-pink-600 text-white px-6 py-3 rounded-xl font-semibold hover:shadow-lg hover:scale-105 transition-all duration-300">
+              View All Articles
+            </button>
+          </div>
+          
+          <div class="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6">
+            <div class="group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-1 overflow-hidden">
+              <div class="relative overflow-hidden">
+                <img src="https://images.pexels.com/photos/3825539/pexels-photo-3825539.jpeg?auto=compress&cs=tinysrgb&w=400" alt="The Future of AI in Healthcare" class="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-500">
+                <div class="absolute top-4 left-4 px-3 py-1 rounded-full text-white text-sm font-semibold" style="background-color: #00CFFF;">Technology</div>
+                <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  <i data-lucide="arrow-up-right" class="absolute top-4 right-4 w-6 h-6 text-white"></i>
+                </div>
+              </div>
+              <div class="p-6">
+                <h3 class="text-lg font-bold text-gray-900 mb-2 line-clamp-2 group-hover:text-purple-600 transition-colors">The Future of AI in Healthcare</h3>
+                <p class="text-gray-600 text-sm mb-4 line-clamp-2">How artificial intelligence is revolutionizing medical diagnosis and treatment.</p>
+                <div class="flex items-center justify-between text-sm text-gray-500">
+                  <div class="flex items-center space-x-1">
+                    <i data-lucide="user" class="w-4 h-4"></i>
+                    <span>Dr. Sarah Chen</span>
+                  </div>
+                  <div class="flex items-center space-x-1">
+                    <i data-lucide="clock" class="w-4 h-4"></i>
+                    <span>5 min read</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-1 overflow-hidden">
+              <div class="relative overflow-hidden">
+                <img src="https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Mindful Eating for Better Health" class="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-500">
+                <div class="absolute top-4 left-4 px-3 py-1 rounded-full text-white text-sm font-semibold" style="background-color: #00D084;">Health & Wellness</div>
+                <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  <i data-lucide="arrow-up-right" class="absolute top-4 right-4 w-6 h-6 text-white"></i>
+                </div>
+              </div>
+              <div class="p-6">
+                <h3 class="text-lg font-bold text-gray-900 mb-2 line-clamp-2 group-hover:text-purple-600 transition-colors">Mindful Eating for Better Health</h3>
+                <p class="text-gray-600 text-sm mb-4 line-clamp-2">Transform your relationship with food through mindfulness practices.</p>
+                <div class="flex items-center justify-between text-sm text-gray-500">
+                  <div class="flex items-center space-x-1">
+                    <i data-lucide="user" class="w-4 h-4"></i>
+                    <span>Maria Rodriguez</span>
+                  </div>
+                  <div class="flex items-center space-x-1">
+                    <i data-lucide="clock" class="w-4 h-4"></i>
+                    <span>7 min read</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-1 overflow-hidden">
+              <div class="relative overflow-hidden">
+                <img src="https://images.pexels.com/photos/3768916/pexels-photo-3768916.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Building Resilience in Uncertain Times" class="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-500">
+                <div class="absolute top-4 left-4 px-3 py-1 rounded-full text-white text-sm font-semibold" style="background-color: #FFD700;">Mindset & Self-Improvement</div>
+                <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  <i data-lucide="arrow-up-right" class="absolute top-4 right-4 w-6 h-6 text-white"></i>
+                </div>
+              </div>
+              <div class="p-6">
+                <h3 class="text-lg font-bold text-gray-900 mb-2 line-clamp-2 group-hover:text-purple-600 transition-colors">Building Resilience in Uncertain Times</h3>
+                <p class="text-gray-600 text-sm mb-4 line-clamp-2">Practical strategies for developing mental toughness and adaptability.</p>
+                <div class="flex items-center justify-between text-sm text-gray-500">
+                  <div class="flex items-center space-x-1">
+                    <i data-lucide="user" class="w-4 h-4"></i>
+                    <span>James Wilson</span>
+                  </div>
+                  <div class="flex items-center space-x-1">
+                    <i data-lucide="clock" class="w-4 h-4"></i>
+                    <span>6 min read</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-1 overflow-hidden">
+              <div class="relative overflow-hidden">
+                <img src="https://images.pexels.com/photos/3807629/pexels-photo-3807629.jpeg?auto=compress&cs=tinysrgb&w=400" alt="The Science of Sleep Optimization" class="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-500">
+                <div class="absolute top-4 left-4 px-3 py-1 rounded-full text-white text-sm font-semibold" style="background-color: #FF00AA;">Science & Future Trends</div>
+                <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  <i data-lucide="arrow-up-right" class="absolute top-4 right-4 w-6 h-6 text-white"></i>
+                </div>
+              </div>
+              <div class="p-6">
+                <h3 class="text-lg font-bold text-gray-900 mb-2 line-clamp-2 group-hover:text-purple-600 transition-colors">The Science of Sleep Optimization</h3>
+                <p class="text-gray-600 text-sm mb-4 line-clamp-2">Latest research on improving sleep quality for better performance.</p>
+                <div class="flex items-center justify-between text-sm text-gray-500">
+                  <div class="flex items-center space-x-1">
+                    <i data-lucide="user" class="w-4 h-4"></i>
+                    <span>Dr. Alex Kim</span>
+                  </div>
+                  <div class="flex items-center space-x-1">
+                    <i data-lucide="clock" class="w-4 h-4"></i>
+                    <span>8 min read</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-1 overflow-hidden">
+              <div class="relative overflow-hidden">
+                <img src="https://images.pexels.com/photos/159711/books-bookstore-book-reading-159711.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Speed Reading Techniques That Actually Work" class="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-500">
+                <div class="absolute top-4 left-4 px-3 py-1 rounded-full text-white text-sm font-semibold" style="background-color: #9B59B6;">Books & Learning</div>
+                <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  <i data-lucide="arrow-up-right" class="absolute top-4 right-4 w-6 h-6 text-white"></i>
+                </div>
+              </div>
+              <div class="p-6">
+                <h3 class="text-lg font-bold text-gray-900 mb-2 line-clamp-2 group-hover:text-purple-600 transition-colors">Speed Reading Techniques That Actually Work</h3>
+                <p class="text-gray-600 text-sm mb-4 line-clamp-2">Evidence-based methods to double your reading speed while retaining comprehension.</p>
+                <div class="flex items-center justify-between text-sm text-gray-500">
+                  <div class="flex items-center space-x-1">
+                    <i data-lucide="user" class="w-4 h-4"></i>
+                    <span>Emma Thompson</span>
+                  </div>
+                  <div class="flex items-center space-x-1">
+                    <i data-lucide="clock" class="w-4 h-4"></i>
+                    <span>4 min read</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="text-center mt-12 lg:hidden">
+            <button class="bg-gradient-to-r from-purple-600 to-pink-600 text-white px-8 py-3 rounded-xl font-semibold hover:shadow-lg hover:scale-105 transition-all duration-300">
+              View All Articles
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- About Section -->
+      <section class="py-20 bg-gradient-to-br from-gray-900 via-purple-900 to-gray-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="grid lg:grid-cols-2 gap-16 items-center">
+            <div class="space-y-8">
+              <div class="space-y-6">
+                <h2 class="text-4xl lg:text-5xl font-bold text-white mb-6">About DailyZest</h2>
+                <p class="text-xl text-gray-300 leading-relaxed">
+                  We're on a mission to democratize knowledge and empower individuals to make informed decisions about their health, career, and future. Our platform brings together expert insights from diverse fields to create a comprehensive resource for lifelong learning.
+                </p>
+                <p class="text-lg text-gray-400 leading-relaxed">
+                  From cutting-edge technology trends to evidence-based health practices, we curate content that matters, ensuring our community stays ahead in an ever-evolving world.
+                </p>
+              </div>
+              <button class="bg-gradient-to-r from-blue-500 to-purple-600 text-white px-8 py-4 rounded-xl font-semibold text-lg hover:shadow-xl hover:scale-105 transition-all duration-300">
+                Read More About Us
+              </button>
+            </div>
+            
+            <div class="grid grid-cols-2 gap-6">
+              <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-6 text-center">
+                <div class="w-12 h-12 bg-blue-500 rounded-xl flex items-center justify-center mx-auto mb-4">
+                  <i data-lucide="target" class="w-6 h-6 text-white"></i>
+                </div>
+                <h3 class="text-2xl font-bold text-white mb-2">Mission</h3>
+                <p class="text-gray-300 text-sm">Empowering minds through accessible, high-quality knowledge</p>
+              </div>
+              
+              <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-6 text-center">
+                <div class="w-12 h-12 bg-green-500 rounded-xl flex items-center justify-center mx-auto mb-4">
+                  <i data-lucide="users" class="w-6 h-6 text-white"></i>
+                </div>
+                <h3 class="text-2xl font-bold text-white mb-2">Community</h3>
+                <p class="text-gray-300 text-sm">10,000+ active learners worldwide</p>
+              </div>
+              
+              <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-6 text-center">
+                <div class="w-12 h-12 bg-orange-500 rounded-xl flex items-center justify-center mx-auto mb-4">
+                  <i data-lucide="lightbulb" class="w-6 h-6 text-white"></i>
+                </div>
+                <h3 class="text-2xl font-bold text-white mb-2">Innovation</h3>
+                <p class="text-gray-300 text-sm">Cutting-edge insights and breakthrough discoveries</p>
+              </div>
+              
+              <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-6 text-center">
+                <div class="w-12 h-12 bg-purple-500 rounded-xl flex items-center justify-center mx-auto mb-4">
+                  <i data-lucide="globe" class="w-6 h-6 text-white"></i>
+                </div>
+                <h3 class="text-2xl font-bold text-white mb-2">Impact</h3>
+                <p class="text-gray-300 text-sm">Transforming lives through knowledge sharing</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- All Categories Section -->
+      <section class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="text-center mb-16">
+            <h2 class="text-4xl lg:text-5xl font-bold text-gray-900 mb-4">Explore All Categories</h2>
+            <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+              Discover a world of knowledge across six carefully curated categories designed to enhance every aspect of your life
+            </p>
+          </div>
+          
+          <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="group relative bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 overflow-hidden">
+              <div class="absolute inset-0 bg-gradient-to-br from-cyan-400 to-blue-500 opacity-0 group-hover:opacity-10 transition-opacity duration-500"></div>
+              <div class="relative p-8">
+                <div class="flex items-center space-x-4 mb-6">
+                  <div class="w-16 h-16 rounded-2xl flex items-center justify-center text-white" style="background-color: #00CFFF;">
+                    <i data-lucide="cpu" class="w-8 h-8"></i>
+                  </div>
+                  <div>
+                    <h3 class="text-xl font-bold text-gray-900">Technology</h3>
+                    <p class="text-sm text-gray-500">127 articles</p>
+                  </div>
+                </div>
+                <p class="text-gray-600 mb-6">AI, Blockchain, Web3, Future Tech</p>
+                <button class="w-full py-3 rounded-xl font-semibold transition-all duration-300 hover:scale-105 hover:shadow-lg" 
+                        style="background-color: #00CFFF15; color: #00CFFF; border: 2px solid #00CFFF30;">
+                  Explore Technology
+                </button>
+              </div>
+              <div class="absolute top-4 right-4 w-8 h-8 rounded-full opacity-20" style="background-color: #00CFFF;"></div>
+            </div>
+            
+            <div class="group relative bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 overflow-hidden">
+              <div class="absolute inset-0 bg-gradient-to-br from-green-400 to-emerald-500 opacity-0 group-hover:opacity-10 transition-opacity duration-500"></div>
+              <div class="relative p-8">
+                <div class="flex items-center space-x-4 mb-6">
+                  <div class="w-16 h-16 rounded-2xl flex items-center justify-center text-white" style="background-color: #00D084;">
+                    <i data-lucide="heart" class="w-8 h-8"></i>
+                  </div>
+                  <div>
+                    <h3 class="text-xl font-bold text-gray-900">Health & Wellness</h3>
+                    <p class="text-sm text-gray-500">89 articles</p>
+                  </div>
+                </div>
+                <p class="text-gray-600 mb-6">Mental Health, Fitness, Longevity</p>
+                <button class="w-full py-3 rounded-xl font-semibold transition-all duration-300 hover:scale-105 hover:shadow-lg" 
+                        style="background-color: #00D08415; color: #00D084; border: 2px solid #00D08430;">
+                  Explore Health & Wellness
+                </button>
+              </div>
+              <div class="absolute top-4 right-4 w-8 h-8 rounded-full opacity-20" style="background-color: #00D084;"></div>
+            </div>
+            
+            <div class="group relative bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 overflow-hidden">
+              <div class="absolute inset-0 bg-gradient-to-br from-orange-400 to-red-500 opacity-0 group-hover:opacity-10 transition-opacity duration-500"></div>
+              <div class="relative p-8">
+                <div class="flex items-center space-x-4 mb-6">
+                  <div class="w-16 h-16 rounded-2xl flex items-center justify-center text-white" style="background-color: #FF7F50;">
+                    <i data-lucide="apple" class="w-8 h-8"></i>
+                  </div>
+                  <div>
+                    <h3 class="text-xl font-bold text-gray-900">Diet & Nutrition</h3>
+                    <p class="text-sm text-gray-500">156 articles</p>
+                  </div>
+                </div>
+                <p class="text-gray-600 mb-6">Evidence-based Nutrition, Recipes</p>
+                <button class="w-full py-3 rounded-xl font-semibold transition-all duration-300 hover:scale-105 hover:shadow-lg" 
+                        style="background-color: #FF7F5015; color: #FF7F50; border: 2px solid #FF7F5030;">
+                  Explore Diet & Nutrition
+                </button>
+              </div>
+              <div class="absolute top-4 right-4 w-8 h-8 rounded-full opacity-20" style="background-color: #FF7F50;"></div>
+            </div>
+            
+            <div class="group relative bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 overflow-hidden">
+              <div class="absolute inset-0 bg-gradient-to-br from-purple-400 to-purple-600 opacity-0 group-hover:opacity-10 transition-opacity duration-500"></div>
+              <div class="relative p-8">
+                <div class="flex items-center space-x-4 mb-6">
+                  <div class="w-16 h-16 rounded-2xl flex items-center justify-center text-white" style="background-color: #9B59B6;">
+                    <i data-lucide="book-open" class="w-8 h-8"></i>
+                  </div>
+                  <div>
+                    <h3 class="text-xl font-bold text-gray-900">Books & Learning</h3>
+                    <p class="text-sm text-gray-500">203 articles</p>
+                  </div>
+                </div>
+                <p class="text-gray-600 mb-6">Speed Reading, Study Techniques</p>
+                <button class="w-full py-3 rounded-xl font-semibold transition-all duration-300 hover:scale-105 hover:shadow-lg" 
+                        style="background-color: #9B59B615; color: #9B59B6; border: 2px solid #9B59B630;">
+                  Explore Books & Learning
+                </button>
+              </div>
+              <div class="absolute top-4 right-4 w-8 h-8 rounded-full opacity-20" style="background-color: #9B59B6;"></div>
+            </div>
+            
+            <div class="group relative bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 overflow-hidden">
+              <div class="absolute inset-0 bg-gradient-to-br from-yellow-400 to-orange-500 opacity-0 group-hover:opacity-10 transition-opacity duration-500"></div>
+              <div class="relative p-8">
+                <div class="flex items-center space-x-4 mb-6">
+                  <div class="w-16 h-16 rounded-2xl flex items-center justify-center text-white" style="background-color: #FFD700;">
+                    <i data-lucide="brain" class="w-8 h-8"></i>
+                  </div>
+                  <div>
+                    <h3 class="text-xl font-bold text-gray-900">Mindset & Self-Improvement</h3>
+                    <p class="text-sm text-gray-500">178 articles</p>
+                  </div>
+                </div>
+                <p class="text-gray-600 mb-6">Psychology, Productivity, Habits</p>
+                <button class="w-full py-3 rounded-xl font-semibold transition-all duration-300 hover:scale-105 hover:shadow-lg" 
+                        style="background-color: #FFD70015; color: #FFD700; border: 2px solid #FFD70030;">
+                  Explore Mindset & Self-Improvement
+                </button>
+              </div>
+              <div class="absolute top-4 right-4 w-8 h-8 rounded-full opacity-20" style="background-color: #FFD700;"></div>
+            </div>
+            
+            <div class="group relative bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 overflow-hidden">
+              <div class="absolute inset-0 bg-gradient-to-br from-pink-400 to-purple-500 opacity-0 group-hover:opacity-10 transition-opacity duration-500"></div>
+              <div class="relative p-8">
+                <div class="flex items-center space-x-4 mb-6">
+                  <div class="w-16 h-16 rounded-2xl flex items-center justify-center text-white" style="background-color: #FF00AA;">
+                    <i data-lucide="zap" class="w-8 h-8"></i>
+                  </div>
+                  <div>
+                    <h3 class="text-xl font-bold text-gray-900">Science & Future Trends</h3>
+                    <p class="text-sm text-gray-500">94 articles</p>
+                  </div>
+                </div>
+                <p class="text-gray-600 mb-6">Research, Innovations, Predictions</p>
+                <button class="w-full py-3 rounded-xl font-semibold transition-all duration-300 hover:scale-105 hover:shadow-lg" 
+                        style="background-color: #FF00AA15; color: #FF00AA; border: 2px solid #FF00AA30;">
+                  Explore Science & Future Trends
+                </button>
+              </div>
+              <div class="absolute top-4 right-4 w-8 h-8 rounded-full opacity-20" style="background-color: #FF00AA;"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Newsletter Section -->
+      <section class="py-20 bg-gradient-to-br from-purple-600 via-pink-600 to-blue-600">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="text-center">
+            <h2 class="text-4xl lg:text-5xl font-bold text-white mb-6">Join 10,000+ Readers Shaping the Future</h2>
+            <p class="text-xl text-white/90 mb-12 max-w-3xl mx-auto">
+              Get weekly insights, exclusive content, and be the first to know about breakthrough discoveries across technology, health, and personal development.
+            </p>
+            
+            <div class="max-w-md mx-auto">
+              <div id="newsletter-success" class="flex items-center justify-center space-x-3 text-white hidden">
+                <i data-lucide="check-circle" class="w-8 h-8 text-green-400"></i>
+                <span class="text-xl font-semibold">Thank you for subscribing!</span>
+              </div>
+              
+              <form id="newsletter-form" class="flex flex-col sm:flex-row gap-4">
+                <input 
+                  type="email" 
+                  id="email-input"
+                  placeholder="Enter your email address" 
+                  required 
+                  class="flex-1 px-6 py-4 rounded-xl text-gray-800 placeholder-gray-500 focus:outline-none focus:ring-4 focus:ring-white/30 text-lg">
+                <button 
+                  type="submit" 
+                  class="bg-white text-purple-600 px-8 py-4 rounded-xl font-bold text-lg hover:bg-gray-100 hover:scale-105 transition-all duration-300 flex items-center justify-center space-x-2 shadow-lg">
+                  <i data-lucide="send" class="w-5 h-5"></i>
+                  <span>Subscribe</span>
+                </button>
+              </form>
+            </div>
+            
+            <div class="mt-8 flex flex-wrap justify-center items-center gap-8 text-white/80">
+              <div class="flex items-center space-x-2">
+                <div class="w-2 h-2 bg-green-400 rounded-full"></div>
+                <span>Weekly Newsletter</span>
+              </div>
+              <div class="flex items-center space-x-2">
+                <div class="w-2 h-2 bg-blue-400 rounded-full"></div>
+                <span>No Spam, Ever</span>
+              </div>
+              <div class="flex items-center space-x-2">
+                <div class="w-2 h-2 bg-yellow-400 rounded-full"></div>
+                <span>Unsubscribe Anytime</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <!-- ===== Footer (Stage 1) ===== -->
+<footer class="footer">
+  <div class="footer__container">
+    <!-- Brand + Mission -->
+    <div class="footer__brand">
+      <!-- Replace with your logo img when ready -->
+      <div class="footer__logo">🐘</div>
+      <div>
+        <h3 class="footer__title">DailyZest</h3>
+        <p class="footer__tagline">Fresh knowledge for a healthier, smarter, future you.</p>
+      </div>
+    </div>
+
+    <!-- Quick Links -->
+    <nav class="footer__links">
+      <h4 class="footer__heading">Explore</h4>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="#categories">Categories</a></li>
+        <li><a href="/about.html">About</a></li>
+        <li><a href="/contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- Trust Links -->
+    <nav class="footer__links">
+      <h4 class="footer__heading">Trust</h4>
+      <ul>
+        <li><a href="/privacy.html">Privacy Policy</a></li>
+        <li><a href="/terms.html">Terms</a></li>
+        <li><a href="/editorial-policy.html">Editorial Policy</a></li>
+      </ul>
+    </nav>
+
+    <!-- Newsletter Placeholder -->
+    <div class="footer__note">
+      <h4 class="footer__heading">Newsletter</h4>
+      <p>DailyZest Newsletter — <em>coming soon</em>.</p>
+    </div>
+  </div>
+
+  <!-- Bottom strip -->
+  <div class="footer__bottom">
+    <p>© 2025 DailyZest.live — All rights reserved.</p>
+  </div>
+</footer>
+
+    </div>
+
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
